@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop</title>
+</head>
+<body>
+        <h1>Form pattern attidutes testing</h1><hr>
+        <form class="input" action="form-echo.php">  
+        Slide 33 Example :
+        <input type="text" name="name">
+        
+        <h3>1. เป็นสระในภาษาอังกฤษเท่านั้นและมีได้ 3 ตัว</h3>
+        <input 
+            type="text"
+            name="3 english only"
+            placeholder="3 english only" 
+            pattern="[aeiouAEIOU]{1,3}" 
+            title="เป็นสระในภาษาอังกฤษเท่านั้นและมีได้ 3 ตัว"    
+        >
+        <h5></h5>
+            
+        <h3>2. ขึ้นต้นด้วยตัวพิมพ์ใหญ่ ที่เหลือเปนอักษรพิมพ์เล็กตั่งแต่ 1 ตัวขึ้นไป</h3> 
+        <input 
+            type="text"
+            name="Xx..."
+            placeholder="Xx..."
+            pattern="[A-Z][a-z]+"
+            title="ขึ้นต้นด้วยตัวพิมพ์ใหญ่ ที่เหลือเปนอักษรพิมพ์เล็กตั่งแต่ 1 ตัวขึ้นไป"
+        >
+
+        <h3>3. ขึ้นต้นคำด้วย ord  หรือ order ลงท้ายด้วยเลข 5 ตัว</h3> 
+        <input  
+            type="text"
+            name="ord/ordernnnnn"
+            placeholder="ord/ordernnnnn"
+            pattern="(ord|order)[0-9]{5}"
+            title="ขึ้นต้นคำด้วย ord  หรือ order ลงท้ายด้วยเลข 5  ตัว"
+        >
+
+        <h3>4. เป็นคำว่า frong หรือ blog หรือ clog เท่านั้น</h3> 
+        <input 
+            type="text"
+            name="frong/blog/clog"
+            placeholder="frong/blog/clog"
+            pattern="(frong|blog|clog)"
+            title="เป็นคำว่า frong หรือ blog หรือ clog เท่านั้น"
+        >
+
+        <h3>BONUS. เป็นรหัสนักศึกษา cs เท่านั้น</h3> 
+        <input 
+            type="text"
+            name="xx-xxxxxx-xxxx-x"
+            placeholder="xx-xxxxxx-xxxx-x"
+            pattern="\d{2}[\-]0406\d{2}[\-]\d{4}[\-]\d{1}"
+            title="เป็นรหัสนักศึกษา 13 หลักของ cs เท่านั้น"
+        >
+        <br><br>
+        <input type="submit" value="submit">    
+        </form>
+</body>
+</html>

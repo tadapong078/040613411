@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+.box{
+    background-color: #EAE6DF;
+    padding: 20px;
+    margin-right: 200px;
+    margin-left: 200px;
+    
+}
+.title{
+    font-size: 30px;
+}
+section > p{
+    font-size: 18px;
+}
+
